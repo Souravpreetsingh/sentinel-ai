@@ -14,3 +14,7 @@ aiofiles>=23.2
 
 # --- Utilities ----------------------------------------------------------------
 python-dotenv>=1.0
+
+# --- Image rendering (evidence snapshot generation) ---------------------------
+numpy>=1.26
+opencv-python-headless>=4.9
