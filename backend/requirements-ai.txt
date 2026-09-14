@@ -1,0 +1,14 @@
+# --- Optional AI / vision dependencies ----------------------------------------
+# Install only when real detection + video processing is required:
+#   pip install -r requirements-ai.txt
+#
+# The backend falls back to the rule-based mock detector (DETECTOR_BACKEND=auto)
+# when these are missing, with a clear log message.
+
+numpy>=1.26
+opencv-python-headless>=4.9
+ultralytics>=8.3
+torch>=2.3
+
+# Model weights are NOT downloaded automatically. Provision yolo11n.pt (or set
+# YOLO_MODEL in .env) yourself before enabling DETECTOR_BACKEND=yolo.

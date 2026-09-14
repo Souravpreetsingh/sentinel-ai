@@ -1,0 +1,28 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Database -------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Uploads / media -------------------------------------------------------
+uploads/*
+videos/*
+!uploads/.gitkeep
+!videos/.gitkeep
+
+# --- OS / tooling ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

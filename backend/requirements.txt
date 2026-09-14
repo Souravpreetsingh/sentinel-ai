@@ -1,0 +1,16 @@
+# --- Core SENTINEL AI backend -------------------------------------------------
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# --- Database ----------------------------------------------------------------
+sqlalchemy>=2.0.30
+psycopg[binary]>=3.2        # PostgreSQL driver (optional if using SQLite dev fallback)
+
+# --- Multipart / async file handling ------------------------------------------
+python-multipart>=0.0.9
+aiofiles>=23.2
+
+# --- Utilities ----------------------------------------------------------------
+python-dotenv>=1.0

@@ -1,0 +1,38 @@
+export const systemHealth = {
+  overall: 98.7,
+  uptime: "99.2%",
+  fps: 58.4,
+  latency: 12,
+  packetLoss: 0.0,
+  totalCameras: 24,
+  onlineCameras: 23,
+  offlineCameras: 1,
+  services: [
+    { name: "FastAPI Core", status: "connected", latency: "12ms" },
+    { name: "CV Pipeline", status: "connected", latency: "42ms" },
+    { name: "WebSocket Server", status: "connected", latency: "8ms" },
+    { name: "YOLO Inference Engine", status: "connected", latency: "9.4ms" },
+    { name: "Database (PostgreSQL)", status: "connected", latency: "3ms" },
+    { name: "Redis Cache", status: "connected", latency: "1ms" },
+    { name: "Object Storage (S3)", status: "connected", latency: "18ms" },
+    { name: "Alert Dispatcher", status: "connected", latency: "5ms" },
+  ],
+  networkBandwidth: {
+    total: 238.4,
+    streams1080p: 165.6,
+    streams4k: 52.8,
+    alerts: 20.0,
+  },
+  gpu: {
+    name: "NVIDIA RTX 4080",
+    vram: "3.2 GB / 16 GB",
+    temperature: 68,
+    utilization: 72,
+    power: "180W / 320W",
+  },
+  storage: {
+    total: "4.0 TB",
+    used: "1.8 TB",
+    percentage: 45,
+  },
+};
